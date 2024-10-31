@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Metadata Analysis</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        #logo {
+            position: absolute; /* Allows positioning at the top left */
+            top: 20px; /* Adjusts the distance from the top */
+            left: 20px; /* Adjusts the distance from the left */
+            width: 100px; /* Adjust the size of the logo */
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        input[type="text"], input[type="file"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo">
+    <h1>File Metadata Analysis</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="directory">Enter Directory to Scan:</label><br>
+        <input type="text" id="directory" name="directory"><br><br>
+        
+        <label for="file">Or upload a single file:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+        
+        <input type="submit" value="Scan">
+    </form>
+</body>
+</html>

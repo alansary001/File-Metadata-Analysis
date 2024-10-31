@@ -1,0 +1,29 @@
+[
+    {
+        "File": "D:/File Metadata Analysis\\analysis.py",
+        "Size": 4614,
+        "Last Accessed": "Tue Oct  1 21:24:09 2024",
+        "Last Modified": "Tue Oct  1 21:13:34 2024",
+        "File Created": "Tue Oct  1 16:54:37 2024",
+        "Permissions": "666",
+        "Owner": "Administrators"
+    },
+    {
+        "File": "D:/File Metadata Analysis\\example.jpg\\example.jpg.jpeg",
+        "Size": 1743018,
+        "Last Accessed": "Tue Oct  1 20:45:50 2024",
+        "Last Modified": "Mon Apr 13 06:42:41 2020",
+        "File Created": "Tue Oct  1 20:45:47 2024",
+        "Permissions": "666",
+        "Owner": "Administrators"
+    },
+    {
+        "File": "D:/File Metadata Analysis\\example.txt\\example.txt.txt",
+        "Size": 1457,
+        "Last Accessed": "Tue Oct  1 19:07:22 2024",
+        "Last Modified": "Tue Oct  1 17:59:08 2024",
+        "File Created": "Tue Oct  1 17:58:23 2024",
+        "Permissions": "666",
+        "Owner": "Administrators"
+    }
+]

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Scan Results</h1>
+    <table>
+        <tr>
+            <th>File</th>
+            <th>Size</th>
+            <th>Last Accessed</th>
+            <th>Last Modified</th>
+            <th>File Created</th>
+            <th>Permissions</th>
+            <th>Owner</th>
+            <th>File Type</th>
+            <th>MD5 Hash</th>
+            <th>SHA256 Hash</th>
+            <th>Content Scan</th>
+        </tr>
+        {% for item in metadata %}
+        <tr>
+            <td>{{ item.File }}</td>
+            <td>{{ item.Size }}</td>
+            <td>{{ item['Last Accessed'] }}</td>
+            <td>{{ item['Last Modified'] }}</td>
+            <td>{{ item['File Created'] }}</td>
+            <td>{{ item.Permissions }}</td>
+            <td>{{ item.Owner }}</td>
+            <td>{{ item['File Type'] }}</td>
+            <td>{{ item['MD5 Hash'] }}</td>
+            <td>{{ item['SHA256 Hash'] }}</td>
+            <td>{{ item['Content Scan'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/download/file_metadata_report.pdf">Download PDF Report</a>
+    <a href="/download/file_metadata_report.csv">Download CSV Report</a>
+</body>
+</html>
